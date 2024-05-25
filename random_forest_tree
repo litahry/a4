@@ -1,0 +1,29 @@
+digraph Tree {
+DecisionTreeClassificationModel: uid=dtc_40e27713d659, depth=5, numNodes=17, numClasses=4, numFeatures=113
+  If (feature 94 in {0.0})
+   If (feature 8 <= 1.5)
+    If (feature 1 <= 0.175)
+     If (feature 15 <= 3.5)
+      If (feature 6 <= 1.5)
+       Predict: 2.0
+      Else (feature 6 > 1.5)
+       Predict: 1.0
+     Else (feature 15 > 3.5)
+      Predict: 2.0
+    Else (feature 1 > 0.175)
+     Predict: 3.0
+   Else (feature 8 > 1.5)
+    If (feature 62 in {0.0})
+     If (feature 44 in {0.0})
+      Predict: 3.0
+     Else (feature 44 not in {0.0})
+      If (feature 56 in {0.0})
+       Predict: 3.0
+      Else (feature 56 not in {0.0})
+       Predict: 2.0
+    Else (feature 62 not in {0.0})
+     Predict: 3.0
+  Else (feature 94 not in {0.0})
+   Predict: 2.0
+
+}
